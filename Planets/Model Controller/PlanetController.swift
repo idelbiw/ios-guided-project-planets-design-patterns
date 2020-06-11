@@ -9,6 +9,11 @@
 import Foundation
 
 class PlanetController {
+    
+    static let shared = PlanetController()
+    
+    private init () {}
+    
     var planetsWithoutPluto = [
         Planet(name: "Mercury", imageName: "mercury"),
         Planet(name: "Venus", imageName: "venus"),
@@ -31,4 +36,5 @@ class PlanetController {
         Planet(name: "Neptune", imageName: "neptune"),
         Planet(name: "Pluto", imageName: "pluto"),
         ]
-}
+    
+} //End of class
